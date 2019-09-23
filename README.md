@@ -1,28 +1,19 @@
-# Project Title
+# node express mongoose CRUD demo
 
-One Paragraph of project description goes here
+a CRUD demo using node express mongoose with mongo
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisites
+### git repo and source
 
-What things you need to install the software and how to install them
+This demo is borrowed from https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/skeleton_website
 
-```
-Give examples
-```
+This git repo is available at https://github.com/aspiringguru/mdn_express_nodejs_skeleton.git
 
-### Installing
+### git commit notes
 
-A step by step series of examples that tell you how to get a development env running
+staged commits to match each page of the mdn tutorial
 
-Say what the step will be
-
-```
-Give the example
-```
-
-
-End with an example of getting some data out of the system or using it for a little demo
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/skeleton_website
