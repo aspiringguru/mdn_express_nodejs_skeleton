@@ -23,3 +23,25 @@ https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/skelet
 ### Designing Schema
 
 ![alt text](readme_files/uml_diagram.png "UML diagram")
+
+### Designing Schema
+
+populate the database with data
+
+npm install --save mongoose
+node populatedb mongodb://127.0.0.1/my_database
+
+to verify contents of database after the populatedb.js script.
+
+mongo
+#to list databases
+show dbs
+#switch to the database
+use my_database
+#list 'tables'
+show collections
+#list contents of collections
+db.authors.find()
+db.bookinstances.find()
+db.books.find()
+db.genreinstances.find()
