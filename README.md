@@ -12,6 +12,8 @@ This demo is borrowed from https://developer.mozilla.org/en-US/docs/Learn/Server
 
 This git repo is available at https://github.com/aspiringguru/mdn_express_nodejs_skeleton.git
 
+based on the original repo https://github.com/hamishwillee/express-locallibrary-tutorial
+
 ### git commit notes
 
 staged commits to match each page of the mdn tutorial
