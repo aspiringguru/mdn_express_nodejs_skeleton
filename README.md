@@ -6,6 +6,13 @@ a CRUD demo using node express mongoose with mongo
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+#to identify ubuntu version
+lsb_release -a
+#starting mongodb server in ubuntu on windows.
+sudo /etc/init.d/mongodb start
+mongo --eval 'db.runCommand({ connectionStatus: 1 })'
+
+
 ### git repo and source
 
 This demo is borrowed from https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/skeleton_website
@@ -45,3 +52,17 @@ db.authors.find()
 db.bookinstances.find()
 db.books.find()
 db.genreinstances.find()
+
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/routes
+DEBUG=express-locallibrary-tutorial:*
+npm run devstart
+
+http://localhost:3000/
+http://localhost:3000/catalog
+http://localhost:3000/catalog/books
+http://localhost:3000/catalog/bookinstances/
+http://localhost:3000/catalog/authors/
+http://localhost:3000/catalog/genres/
+#get id for book from mongodb
+http://localhost:3000/catalog/book/5846437593935e2f8c2aa226
+http://localhost:3000/catalog/book/create

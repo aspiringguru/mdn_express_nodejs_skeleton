@@ -2,6 +2,7 @@ var BookInstance = require('../models/bookinstance');
 
 // Display list of all BookInstances.
 exports.bookinstance_list = function(req, res) {
+    console.log("exports.bookinstance_list")
     res.send('NOT IMPLEMENTED: BookInstance list');
 };
 
