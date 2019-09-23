@@ -17,3 +17,5 @@ This git repo is available at https://github.com/aspiringguru/mdn_express_nodejs
 staged commits to match each page of the mdn tutorial
 
 https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/skeleton_website
+
+Inline-style: ![alt text](readme_files/uml_diagram.png "UML diagram")
