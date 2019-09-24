@@ -117,6 +117,14 @@ atom > packages > settings view > open > select pug (currently version 0.8.0)
 https://pugjs.org/api/getting-started.html
 nb: pug already installed via the package.json
 https://html2jade.org/
-converts html to pug 
+converts html to pug
 
 ### Part 5: Displaying library data
+
+after updating /controllers/bookController.js method book_list() to load a view,
+ if book_list.pug is missing from views/ then this error. (duh obvious!)
+Failed to lookup view "book_list" in views directory "/mnt/d/2019_working/coding/mdn_Mongoose_tutorial/express-locallibrary-tutorial/views"
+
+
+### Part 5: BookInstance list page
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Displaying_data/BookInstance_list_page
