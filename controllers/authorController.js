@@ -4,6 +4,7 @@ var Author = require('../models/author');
 //https://mongoosejs.com/docs/api.html#query_Query-find
 //https://mongoosejs.com/docs/api.html#query_Query-sort
 exports.author_list = function(req, res) {
+    console.log("authorController.js : exports.author_list start");
     //res.send('NOT IMPLEMENTED: Author list');
     Author.find()
     .sort([['family_name', 'ascending']])
@@ -13,6 +14,7 @@ exports.author_list = function(req, res) {
         return next(err);
       }
       //Successful, so render
+      console.log("authorController.js : exports.author_list success, rendering.");
       res.render('author_list', { title: 'Author List', author_list: list_authors });
     });
 };

@@ -51,6 +51,7 @@ app.use('/wiki', wiki);//possibly delete this as was in tutorial not in repo
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
+  console.log("app.js : app.use");
   next(createError(404));
 });
 
