@@ -102,7 +102,7 @@ router.get('/genre/:id', genre_controller.genre_detail);
 // ie  catalog/genres/
 router.get('/genres', genre_controller.genre_list);
 
-router.get('/genreinstance', genre_controller.genre_detail);
+router.get('/genreinstance/:id', genre_controller.genre_detail);
 
 
 /// BOOKINSTANCE ROUTES ///

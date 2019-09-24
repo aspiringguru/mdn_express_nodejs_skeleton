@@ -22,9 +22,9 @@ exports.genre_list = function(req, res) {
 
 // Display detail page for a specific Genre.
 exports.genre_detail = function(req, res) {
-    res.send('NOT IMPLEMENTED: Genre detail: ' + req.params.id);
+    //res.send('NOT IMPLEMENTED: Genre detail: ' + req.params.id);
     console.log("genreController.js : exports.genre_detail start, req.params.id="+req.params.id);
-    /*
+
     async.parallel({
         genre: function(callback) {
             Genre.findById(req.params.id)
@@ -51,7 +51,6 @@ exports.genre_detail = function(req, res) {
         console.log("genreController.js : exports.genre_detail : success, rendering.")
         res.render('genre_detail', { title: 'Genre Detail', genre: results.genre, genre_books: results.genre_books } );
     });
-    */
 };
 
 
