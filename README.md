@@ -66,3 +66,55 @@ http://localhost:3000/catalog/genres/
 #get id for book from mongodb
 http://localhost:3000/catalog/book/5846437593935e2f8c2aa226
 http://localhost:3000/catalog/book/create
+
+
+### Chapter 5 - Asynchronous flow control using async
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Displaying_data
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Displaying_data/flow_control_using_async
+understand series/paralell/waterfall
+https://stackoverflow.com/questions/17853105/difference-between-async-series-and-async-parallel
+https://stackoverflow.com/questions/9258603/what-is-the-difference-between-async-waterfall-and-async-series
+https://medium.com/velotio-perspectives/understanding-node-js-async-flows-parallel-serial-waterfall-and-queues-6f9c4badbc17
+
+Parallel : When we have to run multiple tasks independent of each other
+without waiting until the previous task has completed, parallel comes
+into the picture.
+async.parallel(tasks, callback)
+
+Series
+When we have to run multiple tasks which depend on the output of the
+previous task
+async.series(tasks, callback)
+
+Waterfall : When we have to run multiple tasks which depend on the output of
+the previous task, Waterfall can be helpful.
+async.waterfall(tasks, callback)
+
+Queue
+When we need to run a set of tasks asynchronously, a queue can be used. A
+queue object based on an asynchronous function can be created which is
+passed as a worker.
+async.queue(task, concurrency)
+
+
+Priority Queue
+It is the same as the queue, the only difference being that a priority can be
+assigned to the tasks which are considered in ascending order.
+async.priorityQueue(task,concurrency)
+
+Race
+It runs all the tasks in parallel, but as soon as any of the function
+completes its execution or passes an error to its callback, the main
+callback is immediately called.
+async.race(tasks, callback)
+
+
+### Chapter 5 - Template Primer
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Displaying_data/Template_primer
+
+in atom - install pug plugin for highlighted syntax.
+atom > packages > settings view > open > select pug (currently version 0.8.0)
+https://pugjs.org/api/getting-started.html
+nb: pug already installed via the package.json
+
+### Part 5: Displaying library data

@@ -14,6 +14,7 @@ var book_instance_controller = require('../controllers/bookinstanceController');
 // GET catalog home page.
 //catalog/ — The home/index page.
 router.get('/', book_controller.index);
+//This actually maps to /catalog/ because we import the route with a /catalog prefix
 
 // GET request for creating a Book. NOTE This must come before routes that display Book (uses id).
 router.get('/book/create', book_controller.book_create_get);
