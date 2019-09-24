@@ -19,7 +19,13 @@ var app = express();
 
 //Set up default mongoose connection
 var mongoDB = 'mongodb://127.0.0.1/my_database';
-mongoose.connect(mongoDB, { useNewUrlParser: true });
+mongoose.connect(mongoDB, { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true });
+//from https://github.com/strongloop/loopback-connector-mongodb/issues/540
+//mongoose.connect(mongoDB, { useNewUrlParser: true });//from original tutorial git repo
+//this throws error telling user to use { useUnifiedTopology: true }
+//mongoose.connect(mongoDB, {useUnifiedTopology: true});
+//this throws error telling user to use { useNewUrlParser: true }
+
 //Get the default connection
 var db = mongoose.connection;
 //Bind connection to error event (to get notification of connection errors)
