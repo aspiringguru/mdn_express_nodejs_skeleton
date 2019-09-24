@@ -126,5 +126,5 @@ after updating /controllers/bookController.js method book_list() to load a view,
 Failed to lookup view "book_list" in views directory "/mnt/d/2019_working/coding/mdn_Mongoose_tutorial/express-locallibrary-tutorial/views"
 
 
-### Part 5: BookInstance list page
+### Part 5:  BookInstance list page
 https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Displaying_data/BookInstance_list_page
