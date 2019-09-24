@@ -1,8 +1,20 @@
 var Author = require('../models/author');
 
 // Display list of all Authors.
+//https://mongoosejs.com/docs/api.html#query_Query-find
+//https://mongoosejs.com/docs/api.html#query_Query-sort
 exports.author_list = function(req, res) {
-    res.send('NOT IMPLEMENTED: Author list');
+    //res.send('NOT IMPLEMENTED: Author list');
+    Author.find()
+    .sort([['family_name', 'ascending']])
+    .exec(function (err, list_authors) {
+      if (err) {
+        console.log("error in authorController.js : exports.author_list")
+        return next(err);
+      }
+      //Successful, so render
+      res.render('author_list', { title: 'Author List', author_list: list_authors });
+    });
 };
 
 // Display detail page for a specific Author.
