@@ -116,5 +116,7 @@ in atom - install pug plugin for highlighted syntax.
 atom > packages > settings view > open > select pug (currently version 0.8.0)
 https://pugjs.org/api/getting-started.html
 nb: pug already installed via the package.json
+https://html2jade.org/
+converts html to pug 
 
 ### Part 5: Displaying library data
