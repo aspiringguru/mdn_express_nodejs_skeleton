@@ -18,7 +18,6 @@ var BookInstanceSchema = new Schema(
 // Virtual for bookinstance's URL
 //updated in Date_formatting_using_moment
 BookInstanceSchema
-//.virtual('url')
 .virtual('due_back_formatted')
 .get(function () {
   //return '/catalog/bookinstance/' + this._id;

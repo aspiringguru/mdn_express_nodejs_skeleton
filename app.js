@@ -7,6 +7,9 @@ var logger = require('morgan');
 //Import the mongoose module
 var mongoose = require('mongoose');
 
+//Set up default mongoose connection
+var mongoDB = 'mongodb://127.0.0.1/my_database';
+mongoose.connect(mongoDB, { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true });
 
 
 
@@ -18,8 +21,8 @@ var wiki        = require('./routes/wiki.js');//possibly delete this as was exam
 var app = express();
 
 //Set up default mongoose connection
-var mongoDB = 'mongodb://127.0.0.1/my_database';
-mongoose.connect(mongoDB, { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true });
+//var mongoDB = 'mongodb://127.0.0.1/my_database';
+//mongoose.connect(mongoDB, { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true });
 //from https://github.com/strongloop/loopback-connector-mongodb/issues/540
 //mongoose.connect(mongoDB, { useNewUrlParser: true });//from original tutorial git repo
 //this throws error telling user to use { useUnifiedTopology: true }

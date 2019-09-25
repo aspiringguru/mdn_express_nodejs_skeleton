@@ -44,8 +44,10 @@ exports.book_list = function(req, res) {
 
 // Display detail page for a specific book.
 exports.book_detail = function(req, res, next) {
-    console.log("exports.book_detail start")
+    console.log("exports.book_detail start");
     //res.send('NOT IMPLEMENTED: Book detail: ' + req.params.id);
+    //error in this code block
+    //Schema hasn't been registered for model "Genre". Use mongoose.model(name, schema)
     async.parallel({
         book: function(callback) {
 
@@ -59,6 +61,7 @@ exports.book_detail = function(req, res, next) {
           .exec(callback);
         },
     }, function(err, results) {
+        console.log("exports.book_detail : function(err, results) ")
         if (err) {
           console.log("exports.book_detail : error : "+err);
           return next(err);
