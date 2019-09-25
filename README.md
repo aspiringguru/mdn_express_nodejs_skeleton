@@ -161,3 +161,9 @@ npm install express-validator
 
 ### Part 6-1 Create genre form
 https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/forms/Create_genre_form
+
+### Part 6-2 Create Author form
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/forms/Create_author_form
+
+### Part 6-3 Create Book form
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/forms/Create_book_form
