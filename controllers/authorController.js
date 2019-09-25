@@ -2,6 +2,7 @@ const { body,validationResult } = require('express-validator');
 const { sanitizeBody } = require('express-validator');
 
 var Author = require('../models/author');
+var Genre = require('../models/genre');
 
 // Display list of all Authors.
 //https://mongoosejs.com/docs/api.html#query_Query-find
