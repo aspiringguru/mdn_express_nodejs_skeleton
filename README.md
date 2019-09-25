@@ -161,9 +161,25 @@ npm install express-validator
 
 ### Part 6-1 Create genre form
 https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/forms/Create_genre_form
+to check genre added to database.
+mongo
+show dbs
+use my_database
+show collections
+db.genreinstances.find()
 
 ### Part 6-2 Create Author form
 https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/forms/Create_author_form
+to check authors added to database.
+db.authors.find()
+
 
 ### Part 6-3 Create Book form
 https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/forms/Create_book_form
+db.books.find()
+
+### Part 6-4 Create BookInstance form
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/forms/Create_BookInstance_form
+
+### Part 6-5 Delete Author form
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/forms/Delete_author_form
