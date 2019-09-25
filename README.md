@@ -8,9 +8,19 @@ These instructions will get you a copy of the project up and running on your loc
 
 #to identify ubuntu version
 lsb_release -a
+
+# clone
+clone this git repo, starting with the first commit (will update the commit to branch)
+
 #starting mongodb server in ubuntu on windows.
 sudo /etc/init.d/mongodb start
 mongo --eval 'db.runCommand({ connectionStatus: 1 })'
+#start the node server
+set dev mode to enable more verbose err messages
+
+DEBUG=express-locallibrary-tutorial:*
+npm run devstart
+
 
 
 ### git repo and source
@@ -19,7 +29,8 @@ This demo is borrowed from https://developer.mozilla.org/en-US/docs/Learn/Server
 
 This git repo is available at https://github.com/aspiringguru/mdn_express_nodejs_skeleton.git
 
-based on the original repo https://github.com/hamishwillee/express-locallibrary-tutorial
+based on the original repo https://github.com/mdn/express-locallibrary-tutorial
+also refer this   https://github.com/hamishwillee/express-locallibrary-tutorial
 
 ### git commit notes
 
@@ -137,3 +148,7 @@ https://momentjs.com/docs/
 
 ### Part 5-8: Author list page and Genre list page challenge
 https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Displaying_data/Author_list_page
+
+
+### Part 5-9 Book Detail
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Displaying_data
