@@ -148,7 +148,16 @@ https://momentjs.com/docs/
 
 ### Part 5-8: Author list page and Genre list page challenge
 https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Displaying_data/Author_list_page
-
+this is broken atm.
 
 ### Part 5-9 Book Detail
 https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Displaying_data
+this is broken atm.
+
+
+### Part 6 Working with forms
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/forms
+npm install express-validator
+
+### Part 6-1 Create genre form
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/forms/Create_genre_form
