@@ -61,13 +61,19 @@ MongoDB server version: 3.6.3
 
 Other useful mongo commands
 connect to server
-    mongo    
-#list available databases
+```
+mongo
+```
+list available databases
+```
 show dbs
-#on a freshly install will show admin and local
+```
+on a freshly install this will show admin and local
 # install node (refer other guides) nb: needs LTS
+```
 node -v  #should return v10.16.3 or later
 npm -v   #should return  6.11.3  or later
+```
 
 #now run setup script
 
