@@ -29,19 +29,33 @@ sudo systemctl enable mongodb  #re-enable autostart
 nbb: should not need to allow connection to mongodb from other than localhost
 as this system config will connect from nodejs server on same machine
 #mongo config file
+```
 sudo nano /etc/mongodb.conf
-sudo systemctl restart mongodb #restart mongodb after editing config
+sudo systemctl restart mongodb
+```
+restart mongodb after editing config
+```
+mongod -v  
+```
+This will return :
+```
+Data directory /data/db not found
+```
+on a fresh install. use mongo instead.
 
-mongod -v  #NB: this indicates :Data directory /data/db not found.
 # use mongo instead
+```
 mongo --version
+```
 #for demo purposes, connect to a database using this format
-mongo localhost:27017/dbname  
+```
+mongo localhost:27017/dbname  #using this format to connect to admin database
 mongo localhost:27017/admin
 show collections
 db.system.version.find()
+```
 
-#other mongo diagnostics
+other mongo diagnostics - from bash
 ```
 mongo --eval 'db.runCommand({ connectionStatus: 1 })'
 ```
