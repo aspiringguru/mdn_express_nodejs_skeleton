@@ -42,9 +42,10 @@ show collections
 db.system.version.find()
 
 #other mongo diagnostics
-    mongo --eval 'db.runCommand({ connectionStatus: 1 })'
-
-#this will return
+```
+mongo --eval 'db.runCommand({ connectionStatus: 1 })'
+```
+will return
 ```
 MongoDB shell version v3.6.3
 connecting to: mongodb://127.0.0.1:27017
