@@ -11,6 +11,63 @@ lsb_release -a
 
 # clone
 clone this git repo, starting with the first commit (will update the commit to branch)
+git clone https://github.com/aspiringguru/mdn_express_nodejs_skeleton.git
+
+#setup mongo
+this is my preferred guide, YMMV.
+https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-18-04
+sudo apt update
+sudo apt install -y mongodb
+#check status of installed server
+sudo systemctl status mongodb
+sudo systemctl stop mongodb
+sudo systemctl start mongodb
+sudo systemctl restart mongodb
+sudo systemctl disable mongodb #disable autostart
+sudo systemctl enable mongodb  #re-enable autostart
+#check firewall status. default port for mongo is 27017  
+nbb: should not need to allow connection to mongodb from other than localhost
+as this system config will connect from nodejs server on same machine
+#mongo config file
+sudo nano /etc/mongodb.conf
+sudo systemctl restart mongodb #restart mongodb after editing config
+
+mongod -v  #NB: this indicates :Data directory /data/db not found.
+# use mongo instead
+mongo --version
+#for demo purposes, connect to a database using this format
+mongo localhost:27017/dbname  
+mongo localhost:27017/admin
+show collections
+db.system.version.find()
+
+#other mongo diagnostics
+    mongo --eval 'db.runCommand({ connectionStatus: 1 })'
+
+#this will return
+```
+MongoDB shell version v3.6.3
+connecting to: mongodb://127.0.0.1:27017
+MongoDB server version: 3.6.3
+{
+        "authInfo" : {
+                "authenticatedUsers" : [ ],
+                "authenticatedUserRoles" : [ ]
+        },
+        "ok" : 1
+}
+```
+
+#connect to server
+mongo
+#list available databases
+show dbs
+#on a freshly install will show admin and local
+# install node (refer other guides) nb: needs LTS
+node -v  #should return v10.16.3 or later
+npm -v   #should return  6.11.3  or later
+
+#now run setup script
 
 #starting mongodb server in ubuntu on windows.
 sudo /etc/init.d/mongodb start
@@ -29,7 +86,8 @@ This demo is borrowed from https://developer.mozilla.org/en-US/docs/Learn/Server
 
 This git repo is available at https://github.com/aspiringguru/mdn_express_nodejs_skeleton.git
 
-based on the original repo https://github.com/mdn/express-locallibrary-tutorial
+based on the original repo
+https://github.com/mdn/express-locallibrary-tutorial
 also refer this   https://github.com/hamishwillee/express-locallibrary-tutorial
 
 ### git commit notes
