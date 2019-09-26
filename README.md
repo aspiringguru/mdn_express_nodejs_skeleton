@@ -59,8 +59,9 @@ MongoDB server version: 3.6.3
 }
 ```
 
-#connect to server
-mongo
+Other useful mongo commands
+connect to server
+    mongo    
 #list available databases
 show dbs
 #on a freshly install will show admin and local
