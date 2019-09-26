@@ -183,3 +183,9 @@ https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/forms/
 
 ### Part 6-5 Delete Author form
 https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/forms/Delete_author_form
+#list authors before and after deleting, check list in browser and in mongo
+db.authors.find()
+
+### Part 6-6 Update Book form
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/forms/Update_Book_form
+db.books.find()

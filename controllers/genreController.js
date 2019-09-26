@@ -1,4 +1,5 @@
 const validator = require('express-validator');
+
 var Genre = require('../models/genre');
 var Book  = require('../models/book');
 var async = require('async');
@@ -17,6 +18,7 @@ exports.genre_list = function(req, res) {
       }
       //Successful, so render
       console.log("genreController.js: exports.genre_list success, rendering")
+      console.log("list_genres:"+list_genres)
       res.render('genre_list', { title: 'Genre List', genre_list: list_genres });
     });
 };
